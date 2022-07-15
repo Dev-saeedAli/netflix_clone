@@ -95,15 +95,17 @@
 
 @media screen and (max-width: 600px) {
   .home-video svg {
-    right: -50px;
+    right: 1px;
+    font-size: 1.8rem;
+    top: 18px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .home-video svg {
-    right: 50px;
-    font-size: 2.4rem;
-    top: 15px;
+    right: 1px;
+    font-size: 1.8rem;
+    top: 18px;
   }
 }
 
