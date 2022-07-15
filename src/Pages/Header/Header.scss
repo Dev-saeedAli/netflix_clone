@@ -1,0 +1,102 @@
+.navbar{
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease;
+    
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+  
+    
+    .logo{
+        margin-right: 20px;
+        
+        h3{
+            color: red;
+            font-size: 1.9rem;
+            display: inline;
+            cursor: pointer;
+            
+            @media screen and (max-width: 600px) {
+               font-size: 1.4rem;
+               margin-left: 30px ;
+               margin-right: 0;
+            }
+          
+            
+        }
+    }
+
+    ul{
+        display: flex;
+        gap: 20px;
+        flex: 1;
+
+        @media screen and (max-width: 768px) {
+           flex: 2;
+        }
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                @media screen and (max-width: 768px) {
+                    font-size: .9rem;
+                }
+                @media screen and (max-width: 706px) {
+                    display: none;
+                    flex: 0;
+                 }
+         
+            }
+        }
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+
+        
+        .btn{
+            padding: 6px 10px;
+            margin: 0px 5px;
+            border: none;
+            background: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            @media screen and (max-width: 600px) {
+              font-size: 1rem;
+             }
+       }
+        .btn-red{
+          background: rgb(199, 22, 22);
+          transition: all .3s ease;
+
+          @media screen and (max-width: 600px) {
+              margin-right: 20px;
+           }
+
+          &:hover{
+            background-color: rgb(238, 15, 15);
+          }
+       }
+    }
+
+}
+
+.black{
+    background: black;
+
+}

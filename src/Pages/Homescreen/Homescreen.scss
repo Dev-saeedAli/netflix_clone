@@ -1,0 +1,95 @@
+.hero{
+    height: 85vh;
+   background-position: center !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+
+   @media screen and (max-width : 768px) {
+      justify-content: center;
+   }
+   .movieInfo{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,.5));
+    color: white;
+    max-width: 500px;
+    margin: 0px 130px;
+    padding: 5px;
+    border-radius: 10px;
+
+
+    @media screen and (max-width : 768px) {
+             margin: 0px 10px;
+    }
+
+    h2{
+        font-size: 1.7rem;
+        margin: 0;
+
+    }
+
+    p{
+        word-wrap: break-word;
+        line-height: 1.5;
+        padding: 4px 10px;
+    }
+
+    .btn-options{
+        background: rgb(28, 28, 28);
+        color: white;
+        padding: 7px 20px;
+        margin: 10px 10px;
+        font-weight: 700;
+        border: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition:  all .3s ease;
+
+        &:hover{
+            background: rgb(16, 16, 16);
+        }
+    }
+   }
+}
+
+.home-video{
+    background: black;
+    position: relative;
+    margin: auto;
+
+    @media screen and (max-width:400px){
+        width: 100%;
+    }
+    
+    iframe{
+        width: 100%;
+    }
+
+
+        svg{
+            font-size: 3rem;
+            position: absolute;
+            right: 200px;
+            top: 10px;
+            cursor: pointer;
+            transition: all .5s ease;
+            color: white;
+
+            
+        @media screen and (max-width:600px){
+            right: -50px;
+        }
+        @media screen and (max-width:500px){
+            right: 50px;
+            font-size: 2.4rem;
+            top: 15px;
+        }
+     
+    
+            &:hover{
+                color: rgb(167, 17, 17);
+            }
+    
+        }
+}

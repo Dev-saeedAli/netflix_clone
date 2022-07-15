@@ -1,0 +1,64 @@
+.account-screen{
+    background: black;
+    text-align: center;
+    padding-bottom: 50px;
+    .bg{
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(../../assets/bg_image.jpg) center / cover no-repeat;
+         min-height: 70vh;
+         color: white;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        h2{
+            font-size: 3rem;
+            margin-left: 40px;
+        }
+    }
+
+    .lists{
+        display: inline-flex;
+        position: relative;
+
+        p{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 10px 0px 20px #000;
+            background: black;
+        }
+        img{
+            width: 200px;
+            margin: 10px 10px;
+            cursor: pointer;
+
+            &:hover~.overlay{
+                display: flex;
+            }
+        }
+        .overlay{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+            z-index: 100;
+            display: none;
+
+            span{
+                margin: 10px;
+                svg{
+                    color: white;
+                    font-weight: 900;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+}   

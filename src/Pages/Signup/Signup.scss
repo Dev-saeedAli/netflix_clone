@@ -1,0 +1,80 @@
+.signup-screen{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(../../assets/bg_image.jpg) center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        text-align: left;
+        font-size: 1.4rem;
+        user-select: none;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       margin: 10px;
+        gap: 20px;
+        background: black;
+        color: white;
+        padding: 50px 40px;
+        border-radius: 10px;
+
+        input[type="email"],
+        input[type="password"]{
+            padding: 6px 10px;
+            background: rgb(37, 40, 61);
+            outline:none;
+            border: white;
+            width: 100%;
+            color: white;
+        }
+        
+        .btn-login{
+            border: none;
+            background-color: red;
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all .3s ease;
+            
+            &:hover{
+                background: rgb(210, 17, 17);
+            }
+        }
+        .help{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(80, 80, 80);
+            user-select: none;
+            
+            .remember{
+                margin-left: 5px;
+                font-size: .9rem;
+                cursor: pointer;
+            }
+            .need-help{
+                font-size: .9rem;
+                cursor: pointer;
+            }
+        }
+        .no-account{
+            user-select: none;
+            color: rgb(80, 80, 80);
+            font-size: .9rem;
+    
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-left: 20px;
+        }
+    }
+}

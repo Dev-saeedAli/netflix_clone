@@ -1,0 +1,113 @@
+.signin-screen {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(../../assets/bg_image.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../../assets/bg_image.jpg) center/cover no-repeat;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signin-screen h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.signin-screen form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  gap: 20px;
+  background: black;
+  color: white;
+  padding: 50px 40px;
+  border-radius: 10px;
+}
+
+.signin-screen form input[type="email"],
+.signin-screen form input[type="password"] {
+  padding: 6px 10px;
+  background: #25283d;
+  outline: none;
+  border: white;
+  width: 100%;
+  color: white;
+}
+
+.signin-screen form .btn-login {
+  border: none;
+  background-color: red;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.signin-screen form .btn-login:hover {
+  background: #d21111;
+}
+
+.signin-screen form .help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #505050;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.signin-screen form .help .remember {
+  margin-left: 5px;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.signin-screen form .help .need-help {
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.signin-screen form .no-account {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #505050;
+  font-size: .9rem;
+}
+
+.signin-screen form a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=Login.css.map */

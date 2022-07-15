@@ -1,0 +1,81 @@
+.account-screen {
+  background: black;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.account-screen .bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(../../assets/bg_image.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../../assets/bg_image.jpg) center/cover no-repeat;
+  min-height: 70vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-screen .bg h2 {
+  font-size: 3rem;
+  margin-left: 40px;
+}
+
+.account-screen .lists {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.account-screen .lists p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 10px 0px 20px #000;
+  background: black;
+}
+
+.account-screen .lists img {
+  width: 200px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.account-screen .lists img:hover ~ .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account-screen .lists .overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  z-index: 100;
+  display: none;
+}
+
+.account-screen .lists .overlay span {
+  margin: 10px;
+}
+
+.account-screen .lists .overlay span svg {
+  color: white;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=Account.css.map */

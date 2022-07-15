@@ -1,0 +1,51 @@
+.footer_container{
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    
+    svg{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 1px;
+    }
+    .footer-row{
+        
+        ul{
+            list-style: none;
+            display: flex;
+            gap:20px;
+            
+            li{
+                margin: 10px 0px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    color: grey
+                }
+            }
+        }
+        
+        .navLinks{
+                display: flex;
+                align-items: center;
+                margin: 10px 20px;
+                width: 100%;
+                gap: 60px;
+                flex-wrap: wrap;
+                font-size: 1.1rem;
+            }
+            .span{
+                font-size: .8rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }

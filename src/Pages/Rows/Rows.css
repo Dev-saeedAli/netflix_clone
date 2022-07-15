@@ -1,0 +1,112 @@
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  overflow-x: auto;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards .container {
+  position: relative;
+}
+
+.cards .container .overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: none;
+}
+
+.cards .container .overlay svg {
+  margin: 10px 10px;
+  font-size: 1.4rem;
+}
+
+.cards .container .overlay p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: .9rem;
+  text-overflow: ellipsis;
+  background: none;
+}
+
+.cards .container img {
+  width: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cards .container img:hover ~ .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 200;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.7rem;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.video {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .video {
+    width: 97%;
+  }
+}
+
+.video iframe {
+  width: 100%;
+}
+
+.video svg {
+  font-size: 3rem;
+  position: absolute;
+  right: -70px;
+  top: 10px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #a71111;
+}
+
+@media screen and (max-width: 600px) {
+  .video svg {
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .video svg {
+    right: 50px;
+    font-size: 2.4rem;
+    top: 15px;
+  }
+}
+/*# sourceMappingURL=Rows.css.map */

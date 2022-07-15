@@ -1,0 +1,100 @@
+.cards{
+    display: flex;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    overflow-x: auto;
+    
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .container{
+        // background: red;
+        position: relative;
+        // transition: all 2s ease;
+        
+        
+        .overlay{
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            // z-index: 200 !important;
+            display: none;
+
+            svg{
+                margin: 10px 10px;
+                font-size: 1.4rem;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: .9rem;
+                text-overflow: ellipsis;
+                background: none;
+            }
+        }
+        
+        img{
+            width: 240px;
+            object-fit: cover;
+            margin-right: 20px;
+            cursor: pointer;
+            // z-index: 0px;
+            
+            &:hover~.overlay{
+               display: flex;
+               z-index: 200;
+               cursor: pointer;
+                // transform: scale(1.05);
+        
+            }
+            
+        }
+    }
+}
+h2{
+    font-size: 1.7rem;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.video{
+    position: relative;
+    // border: 1px solid red;
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width:400px){
+        width: 97%;
+    }
+    
+    iframe{
+        width: 100%;
+    }
+
+
+    svg{
+        font-size: 3rem;
+        position: absolute;
+        right: -70px;
+        top: 10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        color: rgb(167, 17, 17);
+
+        @media screen and (max-width:600px){
+            right: -50px;
+        }
+        @media screen and (max-width:500px){
+            right: 50px;
+            font-size: 2.4rem;
+            top: 15px;
+        }
+
+    }
+}
